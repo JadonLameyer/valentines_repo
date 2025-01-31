@@ -1,0 +1,42 @@
+html, body {
+    height: 100%; /* Ensure the container takes up the full screen */
+    margin: 0;    
+    background: #fcd7de;
+    border: 10px solid brown;
+    overflow: hidden; /* Prevent scrolling */
+    box-sizing: border-box; /* Ensure borders are included in the layout */
+    font-family:sans-serif;
+  }
+  
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: center;     /* Centre horizontally */
+    align-items: center;         /* Centre vertically */
+    height: 100%;               /* Full viewport height */
+
+  }
+
+p {
+    font-size: 1.5rem;           /* Optional: Style the paragraph */
+    text-align: center;          /* Centre the text inside the paragraph */
+    margin: 0 0 50px 0;
+    width: 1050px; /* Set a width to demonstrate wrapping */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  button {
+    padding: 10px 20px; /* Optional: Style the button */
+    font-size: 0.75rem;
+    color: white;
+    cursor: pointer;
+    border: 2px solid brown;
+    background-color:  brown;
+  }
+
+img {
+    padding: 0px 10px;
+    width: 417px; 
+    height: 379px; 
+}
