@@ -24,6 +24,8 @@ const links = [
       message.textContent = `Link ${index + 1} is enabled for today!`;
     }
 
+    //????
+
     // Add a click event to show a message when a link is clicked
     linkElement.addEventListener("click", (e) => {
       if (linkElement.classList.contains("disabled")) {
