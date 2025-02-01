@@ -8,21 +8,23 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      height: 100vh;
+      height: 100%;
       display: flex;
       justify-content: center; /* Horizontally centre */
       align-items: center; /* Vertically centre */
       background-color: #ffe6e6;
       border: 10px solid brown;
-      overflow: hidden; /* Prevent scrolling */
+      overflow: hidden; 
       box-sizing: border-box; /* Ensure borders are included in the layout */
       font-family:sans-serif;
     }
 
     .container {
       text-align: center;
-      width: 90%; /* Prevent content from touching edges of the screen */
+      overflow: hidden; /* Prevent content from overflowing */
       max-width: 1200px; /* Limit width for large screens */
+      height: 80%; /* Use the full height of the viewport */
+      width: 90%;   /* Use the full width of the viewport */
     }
 
     h1 {
@@ -31,6 +33,7 @@
 
     .images-container {
       display: grid;
+
       grid-template-columns: repeat(4, 1fr); /* Three columns */
       gap: 30px; /* Space between items */
       justify-items: center; /* Centre images and titles within each column */
@@ -122,6 +125,6 @@
       </div>
     </div>
   </div>
-  <script src="script1.js"></script> 
+  <!-- <script src="script1.js"></script>  -->
 </body>
 </html>
