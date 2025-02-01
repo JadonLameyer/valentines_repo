@@ -35,19 +35,19 @@ let clickCount = 0; // Counter to track how many times the button has been click
       else if (clickCount === 4) {
         document.getElementById("paragraph").innerHTML =  "you are really special to me nomthandazo, really special. i know that we haven't spent a lot of time with each other, but things will get better! i love you and i love us, and i will always choose you no matter the distance.";
         var img =  document.getElementById("image");
-        img.src = "love notes.jpg"; 
+        img.src = "lipstick kisses.jpg"; 
         img.width= "417px"; 
         img.height= "380px";  
-        document.getElementById("body").style.background = "#7e7a6e";
+        document.getElementById("body").style.background = "#white";
     } 
       else if (clickCount === 5) {
         document.getElementById("paragraph").innerHTML = "getting a call from you every morning is a blessing, getting to spend time speaking to you is a blessing, being able to send you TikToks is a blessing - having you in my life is a blessing and something i'll never, ever take for granted";
 
         var img =  document.getElementById("image");
-        img.src = "snoopy love with hearts.jpg"; 
+        img.src = "for the best.jpg"; 
         img.width= "417px"; 
         img.height= "380px";  
-        document.getElementById("body").style.background = "#f8e3ec";
+        document.getElementById("body").style.background = "white";
     } 
      else if (clickCount === 6) {
         document.getElementById("paragraph").innerHTML = "you're such a beautiful person, so kind, so sweet! you're so super intelligent and you always know how to make me laugh!";
@@ -67,18 +67,54 @@ let clickCount = 0; // Counter to track how many times the button has been click
         document.getElementById("body").style.background = "#f7f1e3";
     } 
       else if (clickCount === 8) {
-        document.getElementById("paragraph").innerHTML = "so miss nomthandazo martha rametsi, will you be my valetine?";
-        var img =  document.getElementById("image");
-        img.src = "valetines dinner.jpg"; 
-        img.width= "417px"; 
-        img.height= "380px"; 
-        document.getElementById("body").style.background = "#aaa498";
-    } 
 
-      else {
-        // After third click, the content will stay the same
-        document.getElementById('body').addEventListener('click', function() {
+        var button1 = document.getElementById("button1");
+
+
+        button1.innerHTML =  "yes of course! (the only answer)";
+        document.getElementById('button1').addEventListener('click', function() {
           window.location.href = 'love_letter_page.html';
         });
-      }
+
+
+        // Create a new button element
+        const NoButton = document.createElement("button");
+
+        // Set button text
+        NoButton.innerText = "nope";
+        NoButton.id = "NoButtonID";
+
+
+        // Append the button to the body
+        document.querySelector(".button-container").appendChild(NoButton);
+
+        const button = document.getElementById("NoButtonID");
+        button.style.position = "relative";
+
+        // Add an event listener for click
+        button.addEventListener("mouseenter", () => {
+            const maxX = window.innerWidth - 2500;
+            const maxY = window.innerHeight - 2500;
+
+            const randomX = Math.abs(Math.floor(Math.random() * maxX));
+            const randomY = Math.abs(Math.floor(Math.random() * maxY));
+
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+
+        });
+
+///Users/jadon/Desktop/valentines_repo/heart_pink.png
+        document.getElementById("paragraph").innerHTML = "so miss nomthandazo martha rametsi, will you be my valetine?";
+        var img =  document.getElementById("image");
+        img.src = "heart end.jpg"; 
+        img.width= "100%"; 
+        img.height= "100%"; 
+        img.style.objectFit = "contain"; 
+        //2316 × 3088
+        document.getElementById("body").style.background = "#F6F6F6";
+
+    } 
+
+      else {}
     }
