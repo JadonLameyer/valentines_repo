@@ -4,23 +4,24 @@ const links = [
     "link11", "link12", "link13", "link14"
   ];
 
-  const startDate = new Date(2025, 1, 1); // 1 February 2025
+  var startDate = new Date(2025, 1, 1); // 1 February 2025
   const today = new Date(); // Current date
 
+  const stripTime = (date) => new Date(date.setHours(0, 0, 0, 0));
+  const todayStripped = stripTime(new Date(today));
 
   links.forEach((linkId, index) => {
     const linkDate = new Date(startDate);
     linkDate.setDate(startDate.getDate() + index); // Add index days to the start date
     const linkElement = document.getElementById(linkId);
 
+    // Strip time from linkDate for comparison
+    const linkDateStripped = stripTime(linkDate);
+
     // Check if today's date matches the link's assigned date
-    if (
-      today.getFullYear() === linkDate.getFullYear() &&
-      today.getMonth() === linkDate.getMonth() &&
-      today.getDate() === linkDate.getDate()
-    ) {
+    if (todayStripped.getTime() === linkDateStripped.getTime()) {
       linkElement.classList.remove("disabled");
-      message.textContent = `you can read Love Letter: Feb ${index + 1} today!`;
+      message.textContent = `Link ${index + 1} is enabled for today!`;
     }
 
     // Add a click event to show a message when a link is clicked
