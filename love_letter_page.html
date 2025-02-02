@@ -3,72 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>website to nomi <3</title>
+  <title>Website to Nomi <3</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
-      height: 100%;
-      display: flex;
-      justify-content: center; /* Horizontally centre */
-      align-items: center; /* Vertically centre */
-      background-color: #ffe6e6;
-      border: 10px solid brown;
-      overflow: hidden; 
-      box-sizing: border-box; /* Ensure borders are included in the layout */
-      font-family:sans-serif;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .container {
-      text-align: center;
-      overflow: hidden; /* Prevent content from overflowing */
-      max-width: 1200px; /* Limit width for large screens */
-      height: 80%; /* Use the full height of the viewport */
-      width: 90%;   /* Use the full width of the viewport */
+    html, body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffe6e6;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      overflow: hidden;
     }
 
     h1 {
       color: #ff6666;
+      margin-bottom: 30px;
+      font-size: 28px;
+      text-align: center;
     }
 
     .images-container {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Three columns */
-      gap: 30px; /* Space between items */
-      justify-items: center; /* Centre images and titles within each column */
-      overflow: hidden; 
-
+      grid-template-columns: repeat(4, 3fr);
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+      overflow: hidden;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .image-wrapper {
       text-align: center;
-      overflow: hidden; 
-
     }
 
     a img {
-      width: 150px; /* Adjust width */
-      height: 150px; /* Adjust height */
-      border-radius: 8px;
+      width: 150px;
+      height: 150px;
+      border-radius: 15px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
     }
 
     a img:hover {
-      transform: scale(1.1); /* Slight zoom on hover */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .title {
-      margin-top: 8px;
-      font-size: 14px;
+      margin-top: 10px;
+      font-size: 16px;
       color: #333;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>fourteen days until valentines day!</h1>
+    <h1>love letters for my favourite valentine</h1>
     <div class="images-container">
       <div class="image-wrapper">
         <a href="love1.html" id="link1"  class="disabled"><img src="loveletter_icon.jpg" alt="Love Letter 1"></a>
@@ -128,6 +130,5 @@
       </div>
     </div>
   </div>
-  <!-- <script src="script1.js"></script>  -->
 </body>
 </html>
