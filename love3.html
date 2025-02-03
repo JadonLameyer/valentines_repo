@@ -1,61 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website to Nomi <3</title>
+    <title>website for nomi <3</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcd0d0;
-            color: #fff;
-            display: flex;
-            justify-content: center;
+        .container {
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Centres horizontally */
+            height: 100vh; /* Full height of the viewport */
         }
-        .message {
-            background-color: #ff99cc;
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px; /* Adds space between the image and text */
+            padding: 20px;
+        }
+
+        .content img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
             padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+            border-radius: 15%;
+
         }
-        .heart {
-            color: red;
-            font-size: 50px;
-            margin-top: 20px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        p {
-            font-size: 24px;
+
+        .content p {
+            max-width: 400px;
+            font-size: 16px;
             line-height: 1.5;
         }
-        .message-footer {
-            margin-top: 30px;
-            font-size: 18px;
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: darkblue;
         }
     </style>
 </head>
 <body>
-
-    <div class="message">
-        <h1>NOPE, not yet</h1>
-
-        <p>Come back when the time is right,</p>
-        <p><strong>k love you !</strong></p>
-        <div class="heart">❤️</div>
-        <div class="message-footer">
-            - Your Special Someone
+    <div class="container">
+        <div class="content">
+            <img src="jadons birthday.jpg" alt="Sample Image">
+            <p>
+                i've mentioned this to you a couple of times, but i often feel like i dont deserve love and people going out of their way to do nice things for me.<br>
+                it was something i struggle with a lot and something i'm not the most secure about. its improved a lot, but it still gets me sometimes. <br>
+                when you made me the book (i was actually so blind not seeing it happen around me), it was genuinely the sweetest thing and it made my heart so full and happy.<br>
+                you do such a great job making me feel special and loved and it's such a blessing being able to say that! <br>
+                this day we celebrated my birthday and you really pulled out all the stops to show me how special i am to you and you have no idea how much it means to me! ❤️ <br>
+                thank you for always making me feel loved and appreciated, and i cant wait to get more Manchester United shirts for my birthday from you :) <br>
+                i love you!
+            </p>
+        </div>
+        <div class="button-container">
+            <a href="love_letter_page.html" style="
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #d63384;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        " onmouseover="this.style.backgroundColor='#b3226a'" onmouseout="this.style.backgroundColor='#d63384'">
+            ⬅ 
+        </a>
         </div>
     </div>
-
 </body>
 </html>
