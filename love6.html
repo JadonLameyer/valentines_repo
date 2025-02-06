@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website to Nomi <3</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcd0d0;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .message {
-            background-color: #ff99cc;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-        }
-        .heart {
-            color: red;
-            font-size: 50px;
-            margin-top: 20px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        p {
-            font-size: 24px;
-            line-height: 1.5;
-        }
-        .message-footer {
-            margin-top: 30px;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website for nomi <3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffebee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #d32f2f;
+      font-size: 36px;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      animation: popIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .images {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .images img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-
-    <div class="message">
-        <h1>NOPE, not yet</h1>
-        <p>Come back when the time is right,</p>
-        <p><strong>k love you !</strong></p>
-        <div class="heart">❤️</div>
-        <div class="message-footer">
-            - Your Special Someone
-        </div>
+  <div class="container">
+    <div class="images">
+      <img src="formal1.jpeg" alt="Our Picture 1">
+      <img src="formal2.jpeg" alt="Our Picture 2">
     </div>
-
+    <p>the most perfect day!!! (well it would've been even more perfect without the can of savana)<br>
+    you looked so beautiful! you mentioned how you wished you never showed me the dress beforehand, but when i tell you i've never seen someone so beautiful, in a dress so elegant - completely breathtaking <br>
+    i won't lie in saying i didn't have a lot of alcohol this day but even though i can't remember how i ended up in my bed or how i put my pants on- i remember running to you the moment the music started, finding a space for just us two, holding your waist and staring straight into your eyes. i whispered in your eyes and slowly swayed to each side. with every twirl i thought about how lucky i am to be here, in that moment, with YOU! <br>
+    there was no other person in the entire world but you. those 4 minutes were some of the best in my life<br>
+    you're the most beautiful dance partner <3 (and we'll get more photos in formalwear don't worry) <br>
+    
+    </p>
+  </div>
 </body>
 </html>
