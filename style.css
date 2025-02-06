@@ -1,58 +1,69 @@
 html, body {
-    height: 100%; /* Ensure the container takes up the full screen */
-    margin: 0;    
-    background: #fcd7de;
-    border: 10px solid brown;
-    overflow: hidden; /* Prevent scrolling */
-    box-sizing: border-box; /* Ensure borders are included in the layout */
-    font-family:sans-serif;
-  }
-  
-.flex-container {
-    display: flex;
-    flex-direction: column; /* Arrange elements vertically */
-    justify-content: center;     /* Centre horizontally */
-    align-items: center;         /* Centre vertically */
-    height: 100%;               /* Full viewport height */
-
-  }
-
-p {
-    font-size: 1.5rem;           /* Optional: Style the paragraph */
-    text-align: center;          /* Centre the text inside the paragraph */
-    margin: 0 0 50px 0;
-    width: 1050px; /* Set a width to demonstrate wrapping */
-    word-wrap: break-word; /* Break long words to prevent overflow */
-    white-space: normal; /* Allow text to wrap */
-  }
-
-  button {
-    padding: 10px 20px; /* Optional: Style the button */
-    font-size: 0.75rem;
-    color: white;
-    cursor: pointer;
-    border: 2px solid brown;
-    background-color:  brown;
-    
-  }
-
-  .button-container {
-    display: flex;
-    gap: 10px; /* Space between buttons */
-    justify-content: center; /* Centers buttons */
-    align-items: center; /* Align vertically */
-    width: 100%; 
-    max-width: 400px;
-    margin: 50px auto;
+  height: 100%;
+  margin: 0;
+  background: #fcd7de;
+  border: 10px solid brown;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-  .button-container button {
-    padding: 10px 20px; /* Optional: Style the button */
-    font-size: 0.75rem;
-  }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0 0 50px 0;
+  width: 90%;
+  max-width: 600px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  border: 2px solid brown;
+  background-color: brown;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.button-container button {
+  padding: 12px 24px;
+  font-size: 1rem;
+}
 
 img {
-    padding: 100px 100px;
-    width: 417px; 
-    height: 380px; 
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
 }
