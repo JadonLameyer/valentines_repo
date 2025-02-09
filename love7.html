@@ -1,61 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website to Nomi <3</title>
+    <title>website for nomi <3</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcd0d0;
-            color: #fff;
-            display: flex;
-            justify-content: center;
+        .container {
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Centres horizontally */
+            height: 100vh; /* Full height of the viewport */
         }
-        .message {
-            background-color: #ff99cc;
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px; /* Adds space between the image and text */
+            padding: 20px;
+        }
+
+        .content img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
             padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+            border-radius: 15%;
+
         }
-        .heart {
-            color: red;
-            font-size: 50px;
-            margin-top: 20px;
+
+        img {
+            width:450px;
+            height: 450px;
         }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        p {
-            font-size: 24px;
+
+        .content p {
+            max-width: 400px;
+            font-size: 16px;
             line-height: 1.5;
         }
-        .message-footer {
-            margin-top: 30px;
-            font-size: 18px;
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: steelblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: darkblue;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <div class="content">
+            <img src="anniversary 1.jpg" alt="Sample Image">
+            <p>
+                you're probably wondering what photos are these? you looking cute in the kitchen, my plate shoiwng the ingredients to my sexy shwarma- a normal date night right?<br>
+                this was day 1 of our official relationship! these were taken on the 7th of June 2024, the day the most beautiful relationship started :)<br>
+                you and i have been through a lot, and the relationship hasn't been straightforward, but you have no idea how much this means to me- it means the absolute world<br>
+                i love you so much, and it breaks my heart knowing that my selfish decisions hurt you so much, but i want you to know and to always remember that each and every day i wake up with being the best boyfriend i can be top of my agenda. you mean so much to me, you're literally my bestie, and making sure that i can be the best person for you and for us is so important to me. you make me want to be better, make me want to be the best i can be. <br>
+                this day was the official start of something so special in my life and each and every day i wake up so lucky to say this!❤️ <br>
+                thank you for being the best girlfreind i could ever ask for :) <br>
+                i love you!
+            </p>
+            <img src="anniversary2.jpg" alt="Sample Image">
+        </div>
+        <div class="button-container">
 
-    <div class="message">
-        <h1>NOPE, not yet</h1>
-
-        <p>Come back when the time is right,</p>
-        <p><strong>k love you !</strong></p>
-        <div class="heart">❤️</div>
-        <div class="message-footer">
-            - Your Special Someone
         </div>
     </div>
-
 </body>
 </html>
