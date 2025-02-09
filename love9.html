@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,70 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website for nomi <3</title>
     <style>
-        .container {
-            flex-direction: column;
-            align-items: center;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
             padding: 20px;
-            display: flex;
-            justify-content: center; /* Centres horizontally */
-            height: 100vh; /* Full height of the viewport */
-        }
-        
-        .content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px; /* Adds space between the image and text */
-            padding: 20px;
-        }
-
-        .content img {
-            width: 200px;
-            height: auto;
-            border-radius: 10px;
-            padding: 50px;
-            border-radius: 15%;
-
-        }
-
-        img {
-            width:450px;
-            height: 450px;
-        }
-
-        .content p {
-            max-width: 400px;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        .button-container {
             text-align: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
             margin-top: 20px;
         }
-
-        .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: steelblue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .button:hover {
-            background-color: darkblue;
+        .images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <img src="date1.jpeg" alt="Our Picture 1">
-            <img src="date2.jpeg" alt="Our Picture 2">
-            </div>
-            <p>
+        <p>
             call me chef jadon haha! i'm not going to lie, you actually saved my taste buds from literally daily mince and eggs<br>
             being able to take time for each other and actually go on dates really made these last couple of months apart so much better <br>
             i will always prefer spending time with you and being able to physically kiss you and hold your hand, but surprisingly enough, our movie nights, lego building - all of those moments remind me about how much i love you and love spending time with you <br>
@@ -77,14 +45,12 @@
             can't wait for the next one <br>
             
             </p>
+        <div class="images">
+            <img src="date1.jpeg" alt="Our Picture 3">
+            <img src="date2.jpeg" alt="Our Picture 4">
             <img src="date3.jpeg" alt="Our Picture 3">
             <img src="date4.jpeg" alt="Our Picture 4">
-        </div>
-        <div class="button-container">
-
         </div>
     </div>
 </body>
 </html>
-
-
