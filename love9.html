@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website to Nomi <3</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcd0d0;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .message {
-            background-color: #ff99cc;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-        }
-        .heart {
-            color: red;
-            font-size: 50px;
-            margin-top: 20px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-        p {
-            font-size: 24px;
-            line-height: 1.5;
-        }
-        .message-footer {
-            margin-top: 30px;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>website for nomi <3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #ffebee;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: #d32f2f;
+      font-size: 36px;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      animation: popIn 1s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .images {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .images img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-
-    <div class="message">
-        <h1>NOPE, not yet</h1>
-
-        <p>Come back when the time is right,</p>
-        <p><strong>k love you !</strong></p>
-        <div class="heart">❤️</div>
-        <div class="message-footer">
-            - Your Special Someone
-        </div>
+  <div class="container">
+    <div class="images">
+      <img src="date1.jpeg" alt="Our Picture 1">
+      <img src="date2.jpeg" alt="Our Picture 2">
     </div>
-
+    <p>
+    call me chef jadon haha! i'm not going to lie, you actually saved my taste buds from literally daily mince and eggs<br>
+    being able to take time for each other and actually go on dates really made these last couple of months apart so much better <br>
+    i will always prefer spending time with you and being able to physically kiss you and hold your hand, but surprisingly enough, our movie nights, lego building - all of those moments remind me about how much i love you and love spending time with you <br>
+    there was no other person in the entire world i'd rather beat at 8-ball than you!<br>
+    can't wait for the next one <br>
+    
+    </p>
+    <img src="date3.jpeg" alt="Our Picture 3">
+    <img src="date4.jpeg" alt="Our Picture 4">
+  </div>
 </body>
 </html>
