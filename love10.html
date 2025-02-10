@@ -3,59 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website to Nomi <3</title>
+    <title>Valentine's Animation</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fcd0d0;
-            color: #fff;
+            background-color: #ffcccc;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
             text-align: center;
         }
-        .message {
-            background-color: #ff99cc;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
+        .valentine-text {
+            font-size: 2em;
+            color: #d1005c;
+            font-weight: bold;
+            animation: pulse 1.5s infinite;
         }
-        .heart {
-            color: red;
-            font-size: 50px;
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .image-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
             margin-top: 20px;
         }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
+        .heart {
+            width: 100px;
+            height: 100px;
+            animation: float 3s infinite ease-in-out;
         }
-        p {
-            font-size: 24px;
-            line-height: 1.5;
+        .heart1 {
+            animation-delay: 0s;
         }
-        .message-footer {
-            margin-top: 30px;
-            font-size: 18px;
+        .heart2 {
+            animation-delay: 1.5s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        .video-container {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-
-    <div class="message">
-        <h1>NOPE, not yet</h1>
-
-        <p>Come back when the time is right,</p>
-        <p><strong>k love you !</strong></p>
-        <div class="heart">❤️</div>
-        <div class="message-footer">
-            - Your Special Someone
+    <div class="container">
+        <p class="valentine-text">i loved this day so much! i really wished we spent more days like we did here, relaxing and just spending time outside with each other. we got there a bit late (not complaining because i really enjoyed what we were doing), but thankfully we got there in time to enjoy the sunset. <br>
+            those moments are always so special to me because it's always just you and i against the world, just us two, and i wouldn't have it any other way. <br>
+            this period wasn't the easiest for you, and i'll never be able to make up for the hurt i caused you, but being able to sit on that rock with you and just have a moment with you will always hold such a special place in my heart💖<br>
+            i love us, and i love being your boyfriend, and i promise to spend each and every day showing you how special you are to me. <br>
+            i'm so excited about us, about our future, about all the memories we're going to make together, all the adventures we're going to go on!<br>
+            you mean the absolute world to me and i'm counting the seconds until i see you again <3 (i may or may not be able to accurately know that number)</p>
+        <div class="image-container">
+            <img src="boulders2.jpg" alt="Heart 1" class="heart heart1">
+            <img src="boulders3.jpg" alt="Heart 2" class="heart heart2">
+        </div>
+        <div class="video-container">
+            <video width="320" height="240" controls>
+                <source src="boulders4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
-
 </body>
 </html>
