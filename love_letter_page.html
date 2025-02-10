@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website to Nomi <3</title>
+  <title>website to nomi <3 <3</title>
   <style>
     * {
       margin: 0;
@@ -13,53 +13,43 @@
 
     html, body {
       width: 100%;
-      min-height: 100vh;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       background-color: #ffe6e6;
       font-family: Arial, sans-serif;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
       padding: 20px;
+      overflow: hidden;
     }
 
     h1 {
       color: #ff6666;
-      margin: 20px 0 30px;
-      font-size: clamp(20px, 4vw, 28px);
+      margin-bottom: 30px;
+      font-size: 28px;
       text-align: center;
     }
 
     .images-container {
       display: grid;
+      grid-template-columns: repeat(4, 3fr);
       gap: 20px;
       width: 100%;
-      padding: 10px;
-      justify-content: center;
-      /* Responsive grid columns */
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      max-width: 900px;
+      overflow: hidden;
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .image-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-
-    a {
-      display: block;
-      width: 100%;
-      aspect-ratio: 1;
-      max-width: 150px;
+      text-align: center;
     }
 
     a img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+      width: 150px;
+      height: 150px;
       border-radius: 15px;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
@@ -71,29 +61,10 @@
     }
 
     .title {
-      font-size: clamp(14px, 2vw, 16px);
+      margin-top: 10px;
+      font-size: 16px;
       color: #333;
       font-weight: bold;
-      text-align: center;
-    }
-
-    /* Responsive breakpoints */
-    @media (max-width: 768px) {
-      .container {
-        padding: 10px;
-      }
-      
-      .images-container {
-        gap: 15px;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      }
-    }
-
-    @media (max-width: 480px) {
-      .images-container {
-        gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      }
     }
   </style>
 </head>
@@ -102,11 +73,11 @@
     <h1>love letters for my favourite valentine</h1>
     <div class="images-container">
       <div class="image-wrapper">
-        <a href="love1.html" id="link1" class="disabled"><img src="loveletter_icon.jpg" alt="Love Letter 1"></a>
+        <a href="love1.html" id="link1"  class="disabled"><img src="loveletter_icon.jpg" alt="Love Letter 1"></a>
         <div class="title">1 February</div>
       </div>
       <div class="image-wrapper">
-        <a href="love2.html" id="link2" class="disabled"><img src="loveletter_icon.jpg" alt="Love Letter 2"></a>
+        <a href="love2.html" id="link2"  class="disabled"><img src="loveletter_icon.jpg" alt="Love Letter 2"></a>
         <div class="title">2 February</div>
       </div>
       <div class="image-wrapper">
